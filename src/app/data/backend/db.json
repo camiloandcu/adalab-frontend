@@ -1,0 +1,60 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Cómo la inteligencia artificial está transformando la atención médica",
+      "descripcion": "La inteligencia artificial está revolucionando la atención médica, desde la automatización de tareas administrativas hasta la personalización de tratamientos.",
+      "imagen": "https://miro.medium.com/v2/resize:fit:720/0*XS4pPyniZrXad7Ot",
+      "fecha": "2022-02-28"
+    },
+    {
+      "id": 2,
+      "titulo": "Python se convierte en el lenguaje de programación más popular del mundo",
+      "descripcion": "Python ha superado a Java y se ha convertido en el lenguaje de programación más popular del mundo, gracias a su facilidad de uso y versatilidad.",
+      "imagen": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*1SmNYd1MtrW5TtRno5ruQg.jpeg",
+      "fecha": "2022-03-15"
+    },
+    {
+      "id": 3,
+      "titulo": "Los beneficios del aprendizaje automático para la predicción del clima",
+      "descripcion": "El aprendizaje automático se está utilizando para mejorar la precisión de las predicciones del clima, lo que puede tener un gran impacto en la toma de decisiones empresariales y gubernamentales.",
+      "imagen": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*x2wF3ETkN1l47afRJkRWtA.png",
+      "fecha": "2023-02-18"
+    },
+    {
+      "id": 4,
+      "titulo": "Cómo la visualización de datos puede mejorar el análisis de negocios",
+      "descripcion": "La visualización de datos es una herramienta poderosa para el análisis de negocios, permitiendo a los usuarios identificar patrones y tendencias que no son evidentes en los datos sin procesar.",
+      "imagen": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*OfS9n8O6FQO6pnu1Wj_ksg.jpeg",
+      "fecha": "2023-01-05"
+    },
+    {
+      "id": 5,
+      "titulo": "Los avances en la inteligencia artificial están revolucionando la industria del transporte",
+      "descripcion": "La inteligencia artificial se está utilizando para optimizar el transporte, desde la planificación de rutas hasta la conducción autónoma de vehículos.",
+      "imagen": "https://miro.medium.com/v2/resize:fit:720/0*nVVg8m4yHYJHo0Ew",
+      "fecha": "2022-07-12"
+    },
+    {
+      "id": 6,
+      "titulo": "Cómo el procesamiento de lenguaje natural está cambiando la forma en que interactuamos con la tecnología",
+      "descripcion": "El procesamiento de lenguaje natural está permitiendo a los usuarios interactuar con la tecnología de manera más natural y humana, abriendo nuevas posibilidades en la industria de la tecnología.",
+      "imagen": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*0bL30KH2t32njxdsp0pi5w.png",
+      "fecha": "2023-02-07"
+    },
+    {
+      "id": 7,
+      "titulo": "Cómo la inteligencia artificial está transformando la industria financiera",
+      "descripcion": "La inteligencia artificial se está utilizando en la industria financiera para mejorar la gestión de riesgos, la detección de fraudes y la toma de decisiones de inversión.",
+      "imagen": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*OhWzHPkxXbslpwYyCZ2HKA.png",
+      "fecha": "2022-08-14"
+    },
+    {
+      "id": 8,
+      "titulo": "Los beneficios del análisis de redes sociales para el marketing digital",
+      "descripcion": "El análisis de redes sociales es una herramienta esencial para el marketing digital, permitiendo a los creadores de contenido tener un acceso fácil a trabajo.",
+      "imagen": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*hmlS6ZbqmoqUSqEXF_k1yg.png",
+      "fecha": "2022-02-27"
+    }
+  ]
+}

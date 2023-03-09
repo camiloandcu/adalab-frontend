@@ -13,14 +13,14 @@
         <div class="hidden md:flex items-center space-x-4 text-lg">
             <a routerLink='/noticias' routerLinkActive="active">Noticias</a>
             <a routerLink="/integrantes" routerLinkActive="active">Integrantes</a>
-            <div class="relative">
+            <div class="relative" (mouseenter)="isDropdownActive = true" (mouseleave)="isDropdownActive = false">
                 <button (click)="switchDropdownActive()" #dropdownbtn>Investigaciones</button>
-                <div [@dropdown]= "isDropdownActive ? 'open' : 'closed'" class="absolute p-3 rounded-md drop-shadow-lg bg-secondary flex flex-col" #dropdownmenu>
-                    <a routerLink="/proyectos" routerLinkActive="active" class="hover:bg-blue-600 transition-colors ease-in-out rounded-sm px-1">Proyectos</a>
-                    <a routerLink="/publicaciones" routerLinkActive="active" class="hover:bg-blue-600 transition-colors ease-in-out rounded-sm px-1">Publicaciones</a>
-                    <a routerLink="/software" routerLinkActive="active" class="hover:bg-blue-600 transition-colors ease-in-out rounded-sm px-1">Software</a>
-                    <a routerLink="/videos" routerLinkActive="active" class="hover:bg-blue-600 transition-colors ease-in-out rounded-sm px-1">Videos</a>
-                </div>
+                <ul [@dropdown] = "isDropdownActive ? 'open' : 'closed'" class="absolute drop-shadow-xl bg-secondary">
+                    <li class="hover:bg-blue-600 transition-colors ease-in-out"><a routerLink="/proyectos" routerLinkActive="active" class="block py-3 px-3">Proyectos</a></li>
+                    <li class="hover:bg-blue-600 transition-colors ease-in-out"><a routerLink="/publicaciones" routerLinkActive="active" class="block py-3 px-3">Publicaciones</a></li>
+                    <li class="hover:bg-blue-600 transition-colors ease-in-out"><a routerLink="/software" routerLinkActive="active" class="block py-3 px-3">Software</a></li>
+                    <li class="hover:bg-blue-600 transition-colors ease-in-out"><a routerLink="/videos" routerLinkActive="active" class="block py-3 px-3">Videos</a></li>
+                </ul>
             </div>
         </div>
       </div>

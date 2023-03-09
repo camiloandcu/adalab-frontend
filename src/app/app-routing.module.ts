@@ -11,7 +11,13 @@ const routes: Routes = [
   { 
     path: 'noticias', 
     loadChildren: () => import('./modules/noticias/noticias.module').then(m => m.NoticiasModule) 
-  }];
+  },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full'
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
