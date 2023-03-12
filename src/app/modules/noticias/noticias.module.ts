@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'; 
 
 import { NoticiasRoutingModule } from './noticias-routing.module';
 import { NoticiasListComponent } from './components/noticias-list/noticias-list.component';
@@ -15,7 +16,8 @@ import { NoticiasDetailComponent } from './components/noticias-detail/noticias-d
   imports: [
     CommonModule,
     SharedModule,
-    NoticiasRoutingModule
+    NoticiasRoutingModule,
+    MatProgressSpinnerModule
   ]
 })
 export class NoticiasModule { }

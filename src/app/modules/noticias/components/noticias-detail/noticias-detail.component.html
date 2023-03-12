@@ -1,1 +1,13 @@
-<p>noticias-detail works!</p>
+<div class="max-w-6xl mx-auto my-14 p-5 xl:p-0 flex flex-col">
+  <div *ngIf="currentNoticia; else loaderComponent">
+    <h1 class="text-white">noticias-detail of: {{ id }}</h1>
+    <h1 class="text-white">titulo of: {{ currentNoticia.titulo }}</h1>
+    <h1 class="text-white">cuerpo of: {{ currentNoticia.cuerpo }}</h1>
+  </div>
+
+  <ng-template #loaderComponent>
+    <div class="flex justify-center items-center">
+      <mat-spinner></mat-spinner>
+    </div>
+  </ng-template>
+</div>

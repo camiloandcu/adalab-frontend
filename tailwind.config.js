@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+let plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
@@ -12,5 +14,9 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant('second', '&:nth-child(2)')
+    })
+  ],
 }
