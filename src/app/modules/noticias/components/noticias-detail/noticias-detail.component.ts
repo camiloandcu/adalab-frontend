@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { NotificationService } from '@core/services/notification.service';
 import { Noticia } from '@modules/noticias/models/noticia';
 import { NoticiasService } from '@modules/noticias/services/noticias.service';
 
@@ -11,9 +12,11 @@ import { NoticiasService } from '@modules/noticias/services/noticias.service';
 export class NoticiasDetailComponent implements OnInit {
   public id: number;
   public currentNoticia: Noticia;
+  public url: string;
 
-  constructor(private route: ActivatedRoute, private noticiaService: NoticiasService) {
+  constructor(private route: ActivatedRoute, private noticiaService: NoticiasService, private notifService: NotificationService) {
     this.id = this.route.snapshot.params['id'];
+    this.url = window.location.href;
   }
 
   ngOnInit(): void {
@@ -22,5 +25,9 @@ export class NoticiasDetailComponent implements OnInit {
         this.currentNoticia = r.data;
       }
     })
+  }
+
+  notifCopiar(){
+    this.notifService.showSuccess('Enlace copiado')
   }
 }

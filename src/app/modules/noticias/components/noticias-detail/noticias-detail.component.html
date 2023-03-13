@@ -1,8 +1,51 @@
-<div class="max-w-6xl mx-auto my-14 p-5 xl:p-0 flex flex-col">
-  <div *ngIf="currentNoticia; else loaderComponent">
-    <h1 class="text-white">noticias-detail of: {{ id }}</h1>
-    <h1 class="text-white">titulo of: {{ currentNoticia.titulo }}</h1>
-    <h1 class="text-white">cuerpo of: {{ currentNoticia.cuerpo }}</h1>
+<div class="max-w-5xl mx-auto my-14 p-5 xl:p-0 flex flex-col">
+  <div *ngIf="currentNoticia; else loaderComponent" class="flex flex-col">
+    <a
+      routerLink="noticias"
+      class="text-primary font-bold uppercase text-sm mb-1"
+      >Noticias</a
+    >
+    <h3 class="text-white text-4xl font-bold">{{ currentNoticia.titulo }}</h3>
+    <div
+      class="bg-secondary bg-opacity-20 mt-1 p-2 rounded-md flex justify-between"
+    >
+      <div class="text-gray-400 text-xs uppercase">
+        <p>Publicado {{ currentNoticia.fecha }}</p>
+        <p>Publicado por Jesús de Alcazares</p>
+      </div>
+      <button [cdkCopyToClipboard]="url" (click) = "notifCopiar()" matTooltip="Copiar enlace a la noticia" class="h-8 w-8 mr-2">
+        <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9 8L7 8C5.11438 8 4.17157 8 3.58578 8.58579C3 9.17158 3 10.1144 3 12V12C3 13.8856 3 14.8284 3.58579 15.4142C4.17157 16 5.11438 16 7 16L9 16"
+            stroke="#e5e7eb"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15 16L17 16C18.8856 16 19.8284 16 20.4142 15.4142C21 14.8284 21 13.8856 21 12V12C21 10.1144 21 9.17157 20.4142 8.58578C19.8284 8 18.8856 8 17 8L15 8"
+            stroke="#e5e7eb"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8 12H16"
+            stroke="#e5e7eb"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+    <img
+      src="{{ currentNoticia.imagen }}"
+      class="object-cover w-full h-full max-h-96 my-3"
+    />
+    <p class="text-gray-200 text-lg cuerpo my-4">
+      {{currentNoticia.cuerpo}}
+    </p>
   </div>
 
   <ng-template #loaderComponent>
